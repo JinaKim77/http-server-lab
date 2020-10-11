@@ -90,7 +90,7 @@ public class WebServer {
 
         Headers headers = exchange.getRequestHeaders();
         if(headers.containsKey("X-Test") && headers.get("X-Test").get(0).equalsIgnoreCase("true")){
-            String dummyResponse="123 \n";
+            String dummyResponse="123\n";
             sendResponse(dummyResponse.getBytes(), exchange);
             return;
         }
