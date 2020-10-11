@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Status Endpoint",
+      "setup": "sudo update-java-alternatives -s adoptopenjdk-12-hotspot-amd64",
+      "run": "mvn -q -Dtest=WebServerTest#testStatusCheck test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 3
+    },
+    {
+      "name": "Task Endpoint",
+      "setup": "sudo update-java-alternatives -s adoptopenjdk-12-hotspot-amd64",
+      "run": "mvn -q -Dtest=WebServerTest#testTask test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 3
+    },
+    {
+      "name": "Test Header",
+      "setup": "sudo update-java-alternatives -s adoptopenjdk-12-hotspot-amd64",
+      "run": "mvn -q -Dtest=WebServerTest#testHeaderTestTrue test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 2
+    },
+    {
+      "name": "Debug Header",
+      "setup": "sudo update-java-alternatives -s adoptopenjdk-12-hotspot-amd64",
+      "run": "mvn -q -Dtest=WebServerTest#testHeaderTestDebug test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 2
+    }
+  ]
+}
